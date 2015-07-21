@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('area');
+    this.route('area', { path: 'area/:area_id' });
 });
 
 export default Router;
