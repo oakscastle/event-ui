@@ -40,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+      ENV.baseURL = '/events-ui'
+      ENV.locationType = 'hash'
   }
 
   return ENV;
