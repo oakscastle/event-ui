@@ -4,6 +4,15 @@ module.exports = function(app) {
 
   areasRouter.get('/', function(req, res) {
     res.send({
+    });
+  });
+
+  areasRouter.post('/', function(req, res) {
+    res.status(201).end();
+  });
+
+  areasRouter.get('/:id', function(req, res) {
+    res.send({
 	"areas": [
 	    {
 		"id": "house",
@@ -57,19 +66,6 @@ module.exports = function(app) {
 		"image": "tv.svg"
 	    }
 	]
-    });
-  });
-
-  areasRouter.post('/', function(req, res) {
-    res.status(201).end();
-  });
-
-  areasRouter.get('/:id', function(req, res) {
-    res.send({
-      'areas': {
-          id: req.params.id,
-	  image_url: 'test.svg'
-      }
     });
   });
 
