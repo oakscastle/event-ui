@@ -5,6 +5,6 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-    this.route('area', { path: 'area/:area_id' })
+    this.route('area', { path: 'areas/:area_id' })
 
 `export default Router`
