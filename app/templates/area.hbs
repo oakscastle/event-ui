@@ -1,2 +1,23 @@
 {{outlet}}
 {{model.id}}
+
+Contents of {{model.image_url}}
+
+<svg from='{{model.image_url}}'>
+  Contents of {{model.image_url}}
+  <a xlink:href='/areas/2'>
+    <svg from='kitchen.svg' x='50' y='50' width='35' height='35'>
+      <!-- Contents of kitchen.svg -->
+    </svg>
+  </a>
+  <a xlink:href='/areas/3'>
+    <svg from='den.svg' x='150' y='150' width='45' height='45'>
+      <!-- Contents of den.svg -->
+      <a xlink:href='/areas/4'>
+        <svg from='tv.svg' x='25' y='25' width='10' height='10'>
+          <!-- Contents of tv.svg -->
+        </svg>
+      </a>
+    </svg>
+  </a>
+</svg>
