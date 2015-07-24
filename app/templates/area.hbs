@@ -3,23 +3,4 @@
 
 Contents of {{model.image_url}}
 
-<svg from='{{model.image_url}}'>
-  Contents of {{model.image_url}}
-  {{#each model.contains as |child|}}
-    <a xlink:href='/areas/{{child.id}}'>
-      <svg from='kitchen.svg' x='{{child.position.x}}' y='{{child.position.y}}' width='{{child.size.width}}' height='{{child.size.height}}'>
-        <text>Child Contents of {{child.image_url}}</text>
-      </svg>
-    </a>
-  {{/each}}
-  <a xlink:href='/areas/3'>
-    <svg from='den.svg' x='150' y='150' width='45' height='45'>
-      <!-- Contents of den.svg -->
-      <a xlink:href='/areas/4'>
-        <svg from='tv.svg' x='25' y='25' width='10' height='10'>
-          <!-- Contents of tv.svg -->
-        </svg>
-      </a>
-    </svg>
-  </a>
-</svg>
+{{area-svg area=model}}

@@ -2,6 +2,6 @@
 
 Area = DS.Model.extend
     contains: DS.attr()
-    image_url: DS.attr('string')  
+    image_url: DS.attr('string')
 
-`export default Area`
+#`export default Area`
