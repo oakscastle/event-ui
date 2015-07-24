@@ -20,6 +20,7 @@ module.exports = function(app) {
 		"contains": [
 		    {
 			"id": "kitchen",
+			"area": "kitchen",
 			"image_url": "kitchen.svg",
 			"position": {
 			    "x": 50,
