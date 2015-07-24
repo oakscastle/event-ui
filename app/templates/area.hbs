@@ -5,11 +5,13 @@ Contents of {{model.image_url}}
 
 <svg from='{{model.image_url}}'>
   Contents of {{model.image_url}}
-  <a xlink:href='/areas/2'>
-    <svg from='kitchen.svg' x='50' y='50' width='35' height='35'>
-      <!-- Contents of kitchen.svg -->
-    </svg>
-  </a>
+  {{#each model.contains as |child|}}
+    <a xlink:href='/areas/{{child.id}}'>
+      <svg from='kitchen.svg' x='{{child.position.x}}' y='{{child.position.y}}' width='{{child.size.width}}' height='{{child.size.height}}'>
+        <text>Child Contents of {{child.image_url}}</text>
+      </svg>
+    </a>
+  {{/each}}
   <a xlink:href='/areas/3'>
     <svg from='den.svg' x='150' y='150' width='45' height='45'>
       <!-- Contents of den.svg -->
