@@ -17,7 +17,7 @@ module.exports = function(app) {
 	    {
 		"id": "house",
 		"image_url": "house.svg",
-		"containedAreas": [ 'c1', 'c2' ]
+		"containers": [ 'c1', 'c2' ]
 	    },
 	    {
 		"id": "kitchen",
@@ -26,14 +26,14 @@ module.exports = function(app) {
 	    {
 		"id": "den",
 		"image_url": "den.svg",
-		"containedAreas": [ 'c3' ]
+		"containers": [ 'c3' ]
 	    },
 	    {
 		"id": "tv",
 		"image": "tv.svg"
 	    }
 	],
-        "contained_areas": [
+        "containers": [
             {
 		"id": "c1",
 		"area": "kitchen",
