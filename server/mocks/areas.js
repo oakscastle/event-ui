@@ -17,32 +17,7 @@ module.exports = function(app) {
 	    {
 		"id": "house",
 		"image_url": "house.svg",
-		"contains": [
-		    {
-			"id": "kitchen",
-			"area": "kitchen",
-			"image_url": "kitchen.svg",
-			"position": {
-			    "x": 50,
-			    "y": 50
-			},
-			"size": {
-			    "width": 100,
-			    "height": 50
-			}
-		    },
-		    {
-			"id": "den",
-			"position": {
-			    "x": 25,
-			    "y": 20
-			},
-			"size": {
-			    "width": 100,
-			    "height": 50
-			}
-		    }
-		]
+		"containedAreas": [ 'c1', 'c2' ]
 	    },
 	    {
 		"id": "kitchen",
@@ -51,23 +26,40 @@ module.exports = function(app) {
 	    {
 		"id": "den",
 		"image_url": "den.svg",
-		"contains": [
-		    "id: tv",
-		    {
-			"x": 25,
-			"y": 25
-		    },
-		    {
-			"width": 10,
-			"height": 10
-		    }
-		]
+		"containedAreas": [ 'c3' ]
 	    },
 	    {
 		"id": "tv",
 		"image": "tv.svg"
 	    }
-	]
+	],
+        "contained_areas": [
+            {
+		"id": "c1",
+		"area": "kitchen",
+		"image_url": "kitchen.svg",
+                "x": 50,
+		"y": 50,
+		"width": 100,
+		"height": 50
+            },
+	    {
+		"id": "c2",
+		"area": "den",
+		"x": 25,
+		"y": 20,
+		"width": 100,
+		"height": 50
+            },
+            {
+	        "id": "c3",
+	        "area": "den",
+	        "x": 25,
+	        "y": 25,
+	        "width": 10,
+	        "height": 10
+            }
+        ]
     });
   });
 
