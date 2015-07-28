@@ -1,8 +1,9 @@
 import DS from 'ember-data'
 
 var Area = DS.Model.extend({
-    children: DS.hasMany('container'),
-    image_url: DS.attr('string')
+    containers: DS.hasMany('containers', { async: true }),
+    image_url: DS.attr('string'),
+    parents: DS.hasMany('containers', { async: true })
 })
 
 export default Area

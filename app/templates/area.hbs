@@ -1,6 +1,15 @@
 {{outlet}}
 {{model.id}}
 
+{{log model.containers}}
+{{log model.containers.length}}
+
+{{#each model.containers as |c|}}
+  {{c.id}}
+  {{c.area.image_url}}
+{{/each}}
+
 Contents of {{model.image_url}}
 
 {{area-svg area=model}}
+
