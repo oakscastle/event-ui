@@ -25,7 +25,11 @@ module.exports = function(app) {
 	    },
 	    {
 		"id": "kitchen",
-		"image_url": "kitchen.svg"
+		"image_url": "kitchen.svg",
+                attributes: {
+                    viewBox: '0 0 100 500'
+                },
+                contents: [ "<rect style='fill: green' x='10' y='10' width='20' height='10'/>" ]
 	    },
 	    {
 		"id": "den",
@@ -41,7 +45,6 @@ module.exports = function(app) {
             {
 		"id": "c1",
 		"area": "kitchen",
-		"image_url": "kitchen.svg",
                 "x": 50,
 		"y": 50,
 		"width": 100,
@@ -57,7 +60,7 @@ module.exports = function(app) {
             },
             {
 	        "id": "c3",
-	        "area": "den",
+	        "area": "tv",
 	        "x": 25,
 	        "y": 25,
 	        "width": 10,

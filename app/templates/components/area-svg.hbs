@@ -1,10 +1,9 @@
-<svg x='{{area.position.x}}' y='{{area.position.y}}' width='{{area.size.width}}' height='{{area.size.height}}'>
-  {{{area.contents}}}
-  {{#each area.contains as |child|}}
-    <a xlink:href='/areas/{{child.id}}'>
-      {{area-svg area=child.area}}
-    </a>
-  {{/each}}
-</svg>
+{{{area.contents}}}
+{{{area.containers.length}}}
+{{#each area.containers as |child|}}
+  <a xlink:href='/areas/{{child.id}}'>
+    {{area-svg area=child.area x=child.x y=child.y width=child.width height=child.height}}
+  </a>
+{{/each}}
 
 {{yield}}
