@@ -17,7 +17,11 @@ module.exports = function(app) {
 	    {
 		"id": "house",
 		"image_url": "house.svg",
-		"containers": [ 'c1', 'c2' ]
+		"containers": [ 'c1', 'c2' ],
+                attributes: {
+                    viewBox: '0 0 100 1000'
+                },
+                contents: [ "<rect style='fill: red' x='10' y='10' width='50' height='50'/>" ]
 	    },
 	    {
 		"id": "kitchen",

@@ -1,5 +1,5 @@
-<svg from='{{area.image_url}}' x='{{area.position.x}}' y='{{area.position.y}}' width='{{area.size.width}}' height='{{area.size.height}}'>
-  Contents of {{area.image_url}}
+<svg x='{{area.position.x}}' y='{{area.position.y}}' width='{{area.size.width}}' height='{{area.size.height}}'>
+  {{{area.contents}}}
   {{#each area.contains as |child|}}
     <a xlink:href='/areas/{{child.id}}'>
       {{area-svg area=child.area}}
