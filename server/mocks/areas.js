@@ -16,7 +16,7 @@ module.exports = function(app) {
 	"areas": [
 	    {
 		"id": "house",
-		"image_url": "house.svg",
+		"image_url": "http://dhappy.org/.../rect/1/",
 		"containers": [ 'c1', 'c2' ],
                 attributes: {
                     viewBox: '0 0 100 1000'
