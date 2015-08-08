@@ -17,11 +17,7 @@ module.exports = function(app) {
 	    {
 		"id": "house",
 		"image_url": "http://dhappy.org/.../image/rect/1/",
-		"containers": [ 'c1', 'c2' ],
-                attributes: {
-                    viewBox: '0 0 100 1000'
-                }//,
-                //contents: [ "<rect style='fill: blue' x='10' y='10' width='50' height='50'/>" ]
+		"containers": [ 'c1', 'c2' ]
 	    },
 	    {
 		"id": "kitchen",
