@@ -9,7 +9,7 @@ AreaRoute = Ember.Route.extend({
     afterModel: function(area) {
         //console.log(area.get('image_url'))
         $.get(area.get('image_url')).then(function(data) {
-            area.set('contents', $('<g/>').append(data.documentElement.childNodes).html)
+            area.set('contents', [$('<g/>').append(data.documentElement.childNodes).html()]) // parsing twice
             //debugger
         })
     }

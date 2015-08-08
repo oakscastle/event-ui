@@ -20,8 +20,8 @@ module.exports = function(app) {
 		"containers": [ 'c1', 'c2' ],
                 attributes: {
                     viewBox: '0 0 100 1000'
-                },
-                contents: [ "<rect style='fill: blue' x='10' y='10' width='50' height='50'/>" ]
+                }//,
+                //contents: [ "<rect style='fill: blue' x='10' y='10' width='50' height='50'/>" ]
 	    },
 	    {
 		"id": "kitchen",
