@@ -16,16 +16,16 @@ module.exports = function(app) {
 	"areas": [
 	    {
 		"id": "house",
-		"image_url": "http://dhappy.org/.../rect/1/",
+		"image_url": "http://dhappy.org/.../image/rect/1/",
 		"containers": [ 'c1', 'c2' ],
                 attributes: {
                     viewBox: '0 0 100 1000'
                 },
-                contents: [ "<rect style='fill: red' x='10' y='10' width='50' height='50'/>" ]
+                contents: [ "<rect style='fill: blue' x='10' y='10' width='50' height='50'/>" ]
 	    },
 	    {
 		"id": "kitchen",
-		"image_url": "kitchen.svg",
+		"image_url": "http://dhappy.org/.../image/rect/2/",
                 attributes: {
                     viewBox: '0 0 100 500'
                 },
@@ -33,7 +33,7 @@ module.exports = function(app) {
 	    },
 	    {
 		"id": "den",
-		"image_url": "den.svg",
+		"image_url": "http://dhappy.org/.../image/rect/1/",
 		"containers": [ 'c3' ]
 	    },
 	    {
