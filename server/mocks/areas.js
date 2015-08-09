@@ -21,11 +21,7 @@ module.exports = function(app) {
 	    },
 	    {
 		"id": "kitchen",
-		"image_url": "http://dhappy.org/.../image/rect/2/",
-                attributes: {
-                    viewBox: '0 0 100 500'
-                },
-                contents: [ "<rect style='fill: green' x='10' y='10' width='20' height='10'/>" ]
+		"image_url": "http://dhappy.org/.../image/rect/2/"
 	    },
 	    {
 		"id": "den",
@@ -34,17 +30,17 @@ module.exports = function(app) {
 	    },
 	    {
 		"id": "tv",
-		"image": "tv.svg"
+		"image": "http://dhappy.org/.../image/rect/2/"
 	    }
 	],
         "containers": [
             {
 		"id": "c1",
 		"area": "kitchen",
-                "x": 50,
-		"y": 50,
-		"width": 100,
-		"height": 50
+                "x": 20,
+		"y": 20,
+		"width": 30,
+		"height": 15
             },
 	    {
 		"id": "c2",

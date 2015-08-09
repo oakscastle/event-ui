@@ -1,15 +1,13 @@
 {{outlet}}
-{{model.id}}
 
-{{log model.containers}}
-{{log model.containers.length}}
-
-{{#each model.containers as |c|}}
-  {{c.id}}
-  {{c.area.image_url}}
+<pre>
+{{model.image_url}}
+{{model.containers.length}}
+{{#each model.containers as |container|}}
+  {{container.id}}
+  {{container.area.image_url}}
+  {{container.area.contents}}
 {{/each}}
+</pre>
 
-Contents of {{model.image_url}}
-
-{{area-svg area=model}}
-
+{{area-svg id='map' area=model}}
