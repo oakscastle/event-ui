@@ -2,15 +2,18 @@ import DS from 'ember-data'
 
 var Area = DS.Model.extend({
     containers: DS.hasMany('containers', { async: true }),
-    image_url: DS.attr('string'),
+    image: DS.attr('string'),
     parents: DS.hasMany('containers', { async: true }),
     attributes: DS.attr(),
     contents: function() {
-        $.get(this.get('image_url')).then(function(data) {
-            return $('<g/>').append(data.documentElement.childNodes).html()
-            //area.set('attributes', { viewBox: data.documentElement.attributes.viewBox.value })
+        var svg, url = this.get('image')
+        jQuery.ajax({
+            url: url,
+            success: function(result) { svg = result },
+            async: false
         })
-    }.property('image_url')
+        return $('<g/>').append(svg.documentElement.childNodes).html()
+    }.property('image')
 })
 
 export default Area

@@ -16,21 +16,21 @@ module.exports = function(app) {
 	"areas": [
 	    {
 		"id": "house",
-		"image_url": "http://dhappy.org/.../image/rect/1/",
+		"image": "http://dhappy.org/.../image/rect/1/",
 		"containers": [ 'c1', 'c2' ]
 	    },
 	    {
 		"id": "kitchen",
-		"image_url": "http://dhappy.org/.../image/rect/2/"
+		"image": "http://dhappy.org/.../image/rect/2/"
 	    },
 	    {
 		"id": "den",
-		"image_url": "http://dhappy.org/.../image/rect/1/",
+		"image": "http://dhappy.org/.../image/rect/4/",
 		"containers": [ 'c3' ]
 	    },
 	    {
 		"id": "tv",
-		"image": "http://dhappy.org/.../image/rect/2/"
+		"image": "http://dhappy.org/.../image/rect/3/"
 	    }
 	],
         "containers": [
