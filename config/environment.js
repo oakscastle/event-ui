@@ -9,7 +9,7 @@ module.exports = function(environment) {
     EmberENV: { FEATURES: { } },
 
     contentSecurityPolicy: {
-      'connect-src': "'self' http://dhappy.org",
+      'connect-src': "'self' http://dhappy.org http://localhost",
     },
       
     APP: {

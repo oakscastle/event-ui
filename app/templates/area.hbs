@@ -1,13 +1,3 @@
 {{outlet}}
 
-<pre>
-{{model.image_url}}
-{{model.containers.length}}
-{{#each model.containers as |container|}}
-  {{container.id}}
-  {{container.area.image_url}}
-  {{container.area.contents}}
-{{/each}}
-</pre>
-
-{{area-svg id='map' area=model}}
+{{area-svg id='map' area=model width='100%' height='100%'}}
