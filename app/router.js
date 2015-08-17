@@ -9,7 +9,9 @@ Router = Ember.Router.extend({
 
 Router.map(function() {
     return this.resource('area', { path: 'areas/:area_id' }, function() {
-        this.resource('reservations')
+        this.resource('reservations', function() {
+            this.route('new')
+        })
     })
 });
 

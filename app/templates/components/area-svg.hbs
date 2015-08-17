@@ -1,7 +1,7 @@
 {{{area.contents}}}
 
 {{#each area.containers as |child|}}
-  <a xlink:href='/areas/{{child.area.id}}'>
+  <a xlink:href='/areas/{{child.area.id}}/reservations'>
     {{area-svg area=child.area x=child.x y=child.y width=child.width height=child.height}}
   </a>
 {{/each}}
