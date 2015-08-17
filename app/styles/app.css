@@ -13,6 +13,11 @@ body > .ember-view {
     height: 100%;
 }
 
-#reservations #map {
+#reservations #map, #reservations .un-calendar {
     height: 50%;
+    max-width: 50%;
+}
+
+#reservations .un-calendar {
+    max-width: 40%;
 }
