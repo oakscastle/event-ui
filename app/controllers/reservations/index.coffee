@@ -1,6 +1,5 @@
 `import Ember from 'ember'`
 
-ReservationsIndexController = Ember.Controller.extend
-        needs: 'calendar'
+ReservationsIndexController = Ember.Controller.extend()
 
 `export default ReservationsIndexController`
