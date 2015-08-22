@@ -24,10 +24,13 @@ body > .ember-view {
 
 #reservations #calendar {
     width: 75%;
-    max-height: 100%; // want to scroll. does not
+    max-height: 100%;
 }
 
 #reservations .as-calendar {
+    max-height: 100%;
+    overflow: auto;
+    
     li:nth-child(5), li:nth-child(6), li:nth-child(7) {
         display: none;
     }
