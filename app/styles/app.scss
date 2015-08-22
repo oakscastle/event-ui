@@ -17,11 +17,12 @@ body > .ember-view {
 }
 
 #reservations #map, #reservations .un-calendar {
-    max-height: 30%;
-    max-width: 50%;
+    width: 100%;
 }
 
 #reservations .as-calendar {
+    max-width: 55%;
+    
     li:nth-child(5), li:nth-child(6), li:nth-child(7) {
         display: none;
     }
@@ -37,4 +38,17 @@ body > .ember-view {
 
 #reservations .un-calendar {
     max-width: 40%;
+}
+
+#reservations {
+    display: table;
+    width: 100%;
+
+    #map, .as-calendar {
+        display: table-cell;
+    }
+
+    #map {
+        margin-left: -1.5em;
+    }
 }
