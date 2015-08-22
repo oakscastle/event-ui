@@ -22,6 +22,17 @@ body > .ember-view {
 }
 
 #reservations .as-calendar {
+    li:nth-child(5), li:nth-child(6), li:nth-child(7) {
+        display: none;
+    }
+
+    .as-calendar-timetable {
+        .day-labels, .days {
+            li {
+                width: (100 / 4 / 100) * 100%;
+            }
+        }
+    }
 }
 
 #reservations .un-calendar {
