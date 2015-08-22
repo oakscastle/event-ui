@@ -16,6 +16,10 @@
     "interact": "1.2.4",
     "jquery-simulate": "1.0.1",
     "lodash": "3.10.0",
-    "moment-timezone": "0.4.0"
+    "moment-timezone": "0.4.0",
+    "paint": "0.7.22",
+    "spinjs": "2.0.1",
+    "tooltipster": "3.3.0",
+    "trackpad-scroll-emulator": "1.0.8"
   }
 }
