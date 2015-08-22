@@ -7,6 +7,7 @@ var ApplicationAdapter = DS.RESTAdapter.extend({
     namespace: ".../geo/usa/37601/South%20Roan/1416",
     urlForFindRecord: function(id, type, snapshot) {
         if(type == 'area') {
+            return 'http://dhappy.org/.../geo/usa/37601/South%20Roan/1416/floors/0/json'
             return 'http://localhost/.../geo/usa/37601/South%20Roan/1416/floors/0/json'
         } else if(type == 'reservation') {
             console.log('tried to load reservations')
