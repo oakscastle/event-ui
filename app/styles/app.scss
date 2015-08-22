@@ -10,19 +10,24 @@ body > .ember-view {
     height: 100%;
     max-width: 65em;
     margin: auto;
+    padding-top: 1.5em;
 }
 
 #reservations, #map {
     height: 100%;
 }
 
-#reservations #map, #reservations .un-calendar {
-    width: 100%;
+#reservations #map {
+    width: 95%;
+    max-height: 45%;
+}
+
+#reservations #calendar {
+    width: 75%;
+    max-height: 100%; // want to scroll. does not
 }
 
 #reservations .as-calendar {
-    max-width: 55%;
-    
     li:nth-child(5), li:nth-child(6), li:nth-child(7) {
         display: none;
     }
@@ -36,19 +41,12 @@ body > .ember-view {
     }
 }
 
-#reservations .un-calendar {
-    max-width: 40%;
-}
-
 #reservations {
     display: table;
     width: 100%;
 
-    #map, .as-calendar {
+    & > * {
         display: table-cell;
-    }
-
-    #map {
-        margin-left: -1.5em;
+        vertical-align: top;
     }
 }
