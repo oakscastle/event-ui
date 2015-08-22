@@ -3,10 +3,10 @@
 <div id='reservations'>
 {{area-svg id='map' area=model}}
 
-{{un-calendar showPrevMonth=false showNextMonth=false}}
+{{!un-calendar showPrevMonth=false showNextMonth=false}}
 
 {{as-calendar
-  title="Ember Calendar"
+  title="Reservations for {{name}}"
   occurrences=occurrences
   defaultTimeZoneQuery="New York|London|Dubai|Hong Kong"
   dayStartingTime="9:00"

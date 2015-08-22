@@ -3,6 +3,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    overflow: auto;
 }
 
 body > .ember-view {
@@ -16,8 +17,11 @@ body > .ember-view {
 }
 
 #reservations #map, #reservations .un-calendar {
-    height: 50%;
+    max-height: 30%;
     max-width: 50%;
+}
+
+#reservations .as-calendar {
 }
 
 #reservations .un-calendar {
