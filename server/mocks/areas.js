@@ -16,56 +16,49 @@ module.exports = function(app) {
 	"areas": [
 	    {
 		"id": "house",
-		"image_url": "house.svg",
-		"contains": [
-		    {
-			"id": "kitchen",
-			"position": {
-			    "x": 50,
-			    "y": 50
-			},
-			"size": {
-			    "width": 100,
-			    "height": 50
-			}
-		    },
-		    {
-			"id": "den",
-			"position": {
-			    "x": 25,
-			    "y": 20
-			},
-			"size": {
-			    "width": 100,
-			    "height": 50
-			}
-		    }
-		]
+		"image": "http://dhappy.org/.../image/rect/1/",
+		"containers": [ 'c1', 'c2' ]
 	    },
 	    {
 		"id": "kitchen",
-		"image_url": "kitchen.svg"
+		"image": "http://dhappy.org/.../image/rect/2/"
 	    },
 	    {
 		"id": "den",
-		"image_url": "den.svg",
-		"contains": [
-		    "id: tv",
-		    {
-			"x": 25,
-			"y": 25
-		    },
-		    {
-			"width": 10,
-			"height": 10
-		    }
-		]
+		"image": "http://dhappy.org/.../image/rect/4/",
+		"containers": [ 'c3' ]
 	    },
 	    {
 		"id": "tv",
-		"image": "tv.svg"
+		"image": "http://dhappy.org/.../image/rect/3/"
 	    }
-	]
+	],
+        "containers": [
+            {
+		"id": "c1",
+		"area": "kitchen",
+                "x": 20,
+		"y": 20,
+		"width": 30,
+		"height": 15
+            },
+	    {
+		"id": "c2",
+		"area": "den",
+		"x": 25,
+		"y": 20,
+		"width": 100,
+		"height": 50
+            },
+            {
+	        "id": "c3",
+	        "area": "tv",
+	        "x": 25,
+	        "y": 25,
+	        "width": 10,
+	        "height": 10
+            }
+        ]
     });
   });
 
@@ -81,5 +74,5 @@ module.exports = function(app) {
     res.status(204).end();
   });
 
-  app.use('/api/areas', areasRouter);
+  //app.use('/api/v1/areas', areasRouter);
 };

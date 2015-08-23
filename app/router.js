@@ -1,12 +1,18 @@
-import Ember from 'ember';
-import config from './config/environment';
+import Ember from 'ember'
+import config from './config/environment'
 
-var Router = Ember.Router.extend({
-  location: config.locationType
-});
+var Router
+
+Router = Ember.Router.extend({
+    location: config.locationType
+})
 
 Router.map(function() {
-    this.route('area', { path: 'area/:area_id' });
+    return this.resource('area', { path: 'areas/:area_id' }, function() {
+        this.resource('reservations', function() {
+            this.route('new')
+        })
+    })
 });
 
-export default Router;
+export default Router
