@@ -1,0 +1,38 @@
+{
+  "name": "paint",
+  "version": "0.7.22",
+  "homepage": "https://github.com/alphasights/paint",
+  "authors": [
+    "Eugenio Depalo <eugenio@alphasights.com>",
+    "David Griffiths <david.griffiths@alphasights.com>",
+    "Andrei Popa <andrei@alphasights.com>"
+  ],
+  "description": "Base CSS Framework",
+  "main": "paint.scss",
+  "keywords": [
+    "CSS",
+    "Base"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "fontawesome": "~4.3.0"
+  },
+  "_release": "0.7.22",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.22",
+    "commit": "1b6927c605866786b87f47c27d7dfc93051283b5"
+  },
+  "_source": "git://github.com/alphasights/paint.git",
+  "_target": "0.7.22",
+  "_originalSource": "paint",
+  "_direct": true
+}
